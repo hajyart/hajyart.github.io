@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauricio Hajy | HajyArt</title>
+  <!-- Ícones do FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0d1b2a;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #112233;
+      min-height: 100vh;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      position: relative;
+      text-align: center;
+    }
+
+    /* Banner Superior */
+    .banner {
+      width: 100%;
+      height: 180px;
+      background-image: url('https://raw.githubusercontent.com/site-assets/banner.jpg'); /* Substitua pela URL da sua capa se desejar */
+      background-size: cover;
+      background-position: center;
+      border-bottom: 3px solid #84cc16;
+    }
+
+    /* Avatar do Perfil */
+    .avatar-wrapper {
+      margin-top: -60px;
+      margin-bottom: 15px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #84cc16;
+      background-color: #0d1b2a;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .handle {
+      font-size: 0.95rem;
+      color: #84cc16;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    .bio {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      padding: 0 20px;
+      margin-bottom: 25px;
+    }
+
+    /* Links / Botões */
+    .links-container {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #84cc16;
+      border-radius: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-link i {
+      font-size: 1.3rem;
+      color: #84cc16;
+    }
+
+    .btn-link:hover {
+      background: #84cc16;
+      color: #0d1b2a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(132, 204, 22, 0.3);
+    }
+
+    .btn-link:hover i {
+      color: #0d1b2a;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Capa / Banner -->
+    <div class="banner"></div>
+
+    <!-- Perfil -->
+    <div class="avatar-wrapper">
+      <!-- SVG do Logo da HajyArt incorporado diretamente -->
+      <svg class="avatar" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="#0d1b2a"/>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="#84cc16" stroke-width="4"/>
+        <path d="M40 38 A6 6 0 1 1 40 37.9 Z" fill="#ffffff"/>
+        <circle cx="50" cy="40" r="6" fill="#ffffff"/>
+        <path d="M38 48 H62 V54 H54 V62 H46 V54 H38 Z" fill="#ffffff"/>
+        <path d="M36 68 L44 60 L50 66 L56 60 L64 68" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+
+    <h1>Mauricio Hajy</h1>
+    <p class="handle">@hajyart</p>
+    <p class="bio">Arte & Impressão 3D • Modelagem & Design Autoral</p>
+
+    <!-- Lista de Links -->
+    <div class="links-container">
+      <a href="https://www.instagram.com/hajyart/" target="_blank" class="btn-link">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+
+      <a href="https://www.facebook.com/hajyart/" target="_blank" class="btn-link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=21998247736" target="_blank" class="btn-link">
+        <i class="fab fa-whatsapp"></i> Fazer Orçamento / WhatsApp
+      </a>
+    </div>
+
+    <footer>
+      © Mauricio Hajy • Todos os direitos reservados
+    </footer>
+  </div>
+
+</body>
+</html>
